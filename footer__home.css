@@ -4,7 +4,7 @@
 
 footer {
     margin: 0;
-    justify-content: space-between; /*os itens vão ficar espaçados entre eles*/
+    justify-content: space-between; 
     display: flex;
 }
 
