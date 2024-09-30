@@ -1,8 +1,8 @@
 .header {
-    display: flex; /*deixa os itens um do lado do outro*/
-    justify-content: space-between; /*os itens vão ficar espaçados entre eles*/
-    padding-inline: 1.25rem; /* mexe no padding left e rigth*/
-    padding-block: 0.5rem; /*mexe no padding top e bottom*/
+    display: flex; 
+    justify-content: space-between; 
+    padding-inline: 1.25rem; 
+    padding-block: 0.5rem;
     align-items: center;
     margin-top: -25px;
 }
@@ -10,36 +10,36 @@
 
 
 .logo__icon {
-    display: flex; /*deixa os itens um do lado do outro*/
-    align-items: center; /*os itens vão ficar espaçados entre eles*/
-    padding-inline: 1.25rem; /* mexe no padding left e rigth*/
-    padding-block: 0.5rem; /*mexe no padding top e bottom*/
+    display: flex; 
+    align-items: center; 
+    padding-inline: 1.25rem; 
+    padding-block: 0.5rem; 
 }
 
 .header__icon {
-    width: 80px;  /* define a largura da coisa*/
-    height: auto;  /*define a altura da coisa*/   
+    width: 80px;  
+    height: auto; 
 }
 
 .header__logo {
-    font-size: 2rem; /*determina o tamanho do texto*/
-    font-weight: 600; /*determina a espessura do texto*/
-    color: white; /*muda a cor do elemento*/
+    font-size: 2rem; 
+    font-weight: 600; 
+    color: white; 
     text-decoration: none;
 }
 
 .nav__ul {
-    list-style: none; /*tira o estilo da lista*/
-    display: flex; /*deixa os itens um do lado do outro*/
-    gap: 2rem; /* da um espaçamento entre os itens */
-    padding-inline: 1.25rem; /* mexe no padding left e rigth*/
-    padding-block: 0.5rem; /*mexe no padding top e bottom*/
+    list-style: none; 
+    display: flex; 
+    gap: 2rem; 
+    padding-inline: 1.25rem;
+    padding-block: 0.5rem;
 }
 
 .nav__a {
-    color:white; /*muda a cor do elemento*/
-    text-decoration: none; /*muda a decoração do texto*/
-    font-size: 20px; /*determina o tamanho do texto*/
+    color:white; 
+    text-decoration: none; 
+    font-size: 20px; 
 
 }
 
