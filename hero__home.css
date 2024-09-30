@@ -1,6 +1,6 @@
 .hero {
-   display: flex; /*deixa os itens um do lado do outro*/
-   padding-block: 130px; /*mexe no padding top e bottom*/
+   display: flex; 
+   padding-block: 130px; 
    overflow: hidden;
    
 }
@@ -11,14 +11,14 @@
 }
 
 .hero__title {
-    font-size: 3.5rem; /*determina o tamanho do texto*/
-    line-height: 1; /*determina o espaçamento das linhas*/
-    font-weight: 600; /*determina a espessura do texto*/
-    letter-spacing: -0.05em; /*define o espaçamento de letras*/
+    font-size: 3.5rem; 
+    line-height: 1; 
+    font-weight: 600; 
+    letter-spacing: -0.05em; 
 }
 
 .hero__b {
-    display: inline-block; /* Permite que o botão tenha largura e altura */
+    display: inline-block; 
     background-color: rgb(61, 189, 67);
     cursor: pointer;
     border-radius: 15px;
@@ -36,7 +36,7 @@
     color: white;
     width: 100%;
     height: auto;
-    display:inline-block; /* Permite que o botão tenha largura e altura */
+    display:inline-block;
 
 }
 
