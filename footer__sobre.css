@@ -1,0 +1,26 @@
+.footer__hr {
+    margin-top: 390px;
+}
+
+footer {
+    margin: 0;
+    justify-content: space-between; /*os itens vão ficar espaçados entre eles*/
+    display: flex;
+}
+
+.footer__autor {
+    font-size: 15px;
+    margin-block: 1px;
+}
+
+.footer__logos {
+    width: auto;
+    height: 10px;
+    
+}
+.logo, .footer__link {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+   
+}

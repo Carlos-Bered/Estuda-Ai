@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/10928949.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./hero.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./header.css">
+    
+    <title>CSS</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo__icon">
+          <img class="header__icon" src="img/10928949.png" alt="icon">
+          <span class="header__logo"><a class="header__logo" href="home.html">Estuda Ai</a></span>
+        </div>
+        <nav>
+          <ul class="nav__ul">
+            <li class="nav__li"><a class="nav__a" href="HTML5.html">HTML</a></li>
+            <li class="nav__li"><a class="nav__a" href="CSS.html">CSS</a></li>
+            <li class="nav__li"><a class="nav__a" href="SOBRE.html">SOBRE</a></li>
+          </ul>
+        </nav>
+    </header>
+ <hr class="header__hr">
+
+ <section class="hero">
+    <h2>O que é CSS?</h2>
+    <p>CSS (Cascading Style Sheets) é a linguagem que usamos para definir o estilo de páginas da web. Ele permite que a gente controle a aparência dos elementos HTML, como cor, tamanho de texto, espaçamento, e a posição dos itens na página.</p>
+    <br>
+    <h2>Estrutura básica do CSS</h2>
+    <p>Vamos começar entendendo a estrutura básica de como o CSS funciona. Em CSS, nós escrevemos regras que determinam como os elementos de uma página devem ser exibidos.</p>
+    <br>
+    <h3>A regra básica:</h3>
+    <p>Cada regra CSS tem duas partes:</p>
+    <ol>
+        <li>Seletor: Esse é o nome do elemento HTML que você quer estilizar.</li>
+        <li>Bloco de declaração: Dentro desse bloco, você diz o que quer mudar. O bloco tem duas partes:</li>
+        <ul>
+            <li>Propriedade: O que você quer alterar (por exemplo, cor, tamanho de fonte).</li>
+            <li>Valor: O valor que você quer aplicar (por exemplo, red para cor, 16px para tamanho de fonte).</li>
+        </ul>
+    </ol>
+    <p>Aqui está um exemplo simples:</p>
+    <br>
+    <pre><code class="language-html">
+p {
+  color: blue;
+  font-size: 16px;
+}
+    </code></pre>   
+    <ul>
+      <li>Seletor: p (isso quer dizer que estamos estilizando o parágrafo <p>).</li>
+      <li>Declarações: color: blue; e font-size: 16px;. Isso significa que os parágrafos terão cor azul e tamanho de fonte de 16 pixels.</li>
+    </ul>
+    <h2>Seletores CSS</h2>
+    <p>Os seletores são usados para "alvo" dos elementos HTML que você quer estilizar. Alguns exemplos de seletores:</p>
+
+    <ul>
+      <li>Seletor de elemento: Estiliza todos os elementos daquele tipo.</li>
+    </ul>
+    <pre><code class="language-html">
+h1 {
+  color: green;
+}
+    </code></pre>  
+    <ul>
+      <li>Seletor de classe: Aplica um estilo a elementos que têm uma determinada classe. As classes começam com um ponto (.).</li>
+    </ul>
+    <pre><code class="language-html">
+.meu-texto {
+    font-weight: bold;
+}
+    </code></pre>  
+    <ul>
+      <li>Seletor de ID: Aplica o estilo a um único elemento com um ID específico. IDs começam com o símbolo de cerquilha (#).</li>
+    </ul>
+    <pre><code class="language-html">
+#meu-titulo {
+    text-align: center;
+}
+    </code></pre>  
+
+    <h2>Propriedades mais comuns</h2>
+    <p>Aqui estão algumas das propriedades mais usadas no CSS:</p>
+
+    <ul>
+      <li>Cor do texto: color</li>
+    </ul>
+    <pre><code class="language-html">
+p {
+  color: red;
+}
+    </code></pre>  
+    <ul>
+      <li>Tamanho da fonte: font-size</li>
+    </ul>
+    <pre><code class="language-html">
+p {
+  font-size: 20px;
+}
+    </code></pre> 
+    <ul>
+      <li>Margens: margin (define o espaço externo ao redor de um elemento)</li>
+    </ul>
+    <pre><code class="language-html">
+div {
+  margin: 20px;
+}
+    </code></pre>
+    <ul>
+      <li>Padding: padding (define o espaço interno de um elemento, entre o conteúdo e a borda)</li>
+    </ul>
+    <pre><code class="language-html">
+div {
+  padding: 10px;
+}
+    </code></pre>
+    <ul>
+      <li>Borda: border (define as bordas ao redor de um elemento)</li>
+    </ul>
+    <pre><code class="language-html">
+div {
+  border: 2px solid black;
+}
+    </code></pre>
+
+ <h2>Como o CSS é aplicado?</h2>
+ <p>Você pode aplicar o CSS de três maneiras diferentes:</p>
+ <ul>
+  <li>CSS Inline: Dentro de uma tag HTML, usando o atributo style:</li>
+ </ul>
+ <pre><code class="language-html">
+&lt;p style=&quot;color: blue;&quot;&gt;Este é um parágrafo azul&lt;/p&gt;
+</code></pre>
+<ul>
+  <li>CSS Interno: Dentro de uma tag &lt;style&gt; no cabeçalho da página HTML:</li>
+</ul>
+<pre><code class="language-html">
+&lt;style&gt;
+p {
+  color: blue;
+}
+&lt;/style&gt;  
+</code></pre>
+<ul>
+  <li>CSS Externo: Arquivo CSS separado que é referenciado na página HTML. Esse é o método mais recomendado, porque mantém o código organizado.</li>
+</ul>
+<pre><code class="language-html">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
+</code></pre>
+
+<h2>Cascata e Especificidade</h2>
+<p>O "C" em CSS significa "cascading" (cascata), o que quer dizer que as regras podem se sobrepor. Se houverem múltiplas regras aplicadas a um mesmo elemento, o navegador vai decidir qual usar baseado na especificidade. Quanto mais específico for o seletor, maior a prioridade ele terá.</p>
+<br>
+<p>Por exemplo:</p>
+<pre><code class="language-html">
+p {
+  color: red;
+}
+#meu-paragrafo {
+    color: blue;
+}
+</code></pre>
+<p>Se um parágrafo tiver o ID meu-paragrafo, ele será azul, porque a regra com o ID é mais específica do que a regra que estiliza todos os &lt;p&gt;.</p>
+<br>
+<br>
+<h2> lembre-se de que o CSS é essencial para a apresentação de páginas web.Em resumo, dominar o CSS é fundamental para criar designs atraentes e funcionais.</h2>
+</section>
+
+<div class="hero__bba">
+  <button class="hero__b">
+  <a class="hero__ba" href="SOBRE.html">Próximo </a>
+</button>
+</div>
+
+<hr class="footer__hr">
+  <footer>
+    <p class="footer__autor"> &copy;Carlos Eduardo Martins Saldanha</p>
+    <div class="footer__logos">
+    <a class="footer__link" href="https://www.instagram.com/carlos_bered?igsh=MThwc2Jwa2VrcDBjdQ%3D%3D&utm_source=qr" target="_blank"><img class="logo" src="img/instagram.png" alt="instagram Logo"></a>
+    <a class="footer__link" href="https://br.linkedin.com/in/carlos-eduardo-martins-saldanha-652205323" target="_blank"><img class="logo" src="img/linkedin.png" alt="linkedin logo"></a>
+    <a class="footer__link" href="https://github.com/Carlos-Bered" target="_blank"><img class="logo" src="img/github.png" alt="github logo"></a>
+    </div>
+  </footer>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    
+</body>
+</html>

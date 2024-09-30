@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/10928949.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./hero.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./footer.css">
+
+    <title>HTML5</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo__icon">
+        <img class="header__icon" src="img/10928949.png" alt="icon">
+        <span class="header__logo"><a class="header__logo" href="home.html">Estuda Ai</a></span>
+      </div>
+      <nav>
+        <ul class="nav__ul">
+          <li class="nav__li"><a class="nav__a" href="HTML5.html">HTML</a></li>
+          <li class="nav__li"><a class="nav__a" href="CSS.html">CSS</a></li>
+          <li class="nav__li"><a class="nav__a" href="SOBRE.html">SOBRE</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr class="header__hr">
+
+    <section class="hero">
+
+      <h2>O que é HTML5?</h2>
+      <p>HTML5 (HyperText Markup Language versão 5) é a linguagem de marcação usada para estruturar e apresentar conteúdo na web. Ele define a forma como elementos, como textos, imagens, vídeos e links, são exibidos em um navegador. É a versão mais recente do HTML, com novos recursos e melhorias em relação às versões anteriores.</p>
+      <br>
+      <h2>Estrutura básica de um documento HTML5</h2>
+      <p>Todo documento HTML5 começa com uma estrutura padrão. Ela informa ao navegador que o arquivo segue as convenções do HTML5. Vamos dar uma olhada na estrutura básica de um documento HTML:</p>
+      <div>
+        <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Título da Página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Conteúdo vai aqui --&gt;
+    &lt;h1&gt;Bem-vindo ao HTML5!&lt;/h1&gt;
+    &lt;p&gt;Este é um exemplo básico.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </code></pre>
+      </div>
+    </section>
+    <h3>Vou explicar cada parte</h3>
+    <ul>
+        <li>&lt;!DOCTYPE html&gt; Informa ao navegador que estamos usando HTML5.</li>
+        <br>
+        <li>&lt;html lang="pt-BR"&gt; Indica que o conteúdo da página está em português do Brasil.</li>
+        <br>
+        <li>&lt;head&gt; A seção onde você coloca metadados, como o título da página, links para arquivos CSS, e definições de charset.</li>
+        <br>
+        <li>&lt;meta charset="UTF-8"&gt; Define a codificação de caracteres para garantir que caracteres especiais (como acentos) sejam exibidos corretamente.</li>
+        <br>
+        <li>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; Faz com que a página seja exibida corretamente em dispositivos móveis.</li>
+        <br>
+        <li>&lt;title&gt;  Define o título que será mostrado na aba do navegador.</li>
+        <br>
+        <li>&lt;body&gt; Contém todo o conteúdo visível da página, como textos, imagens e links.</li>
+    </ul>
+    <br>
+    <h2>Principais Tags</h2>
+    <br>
+    <p>Aqui estão algumas das tags mais usadas no HTML5:</p>
+    <br>
+    <ul>
+        <li>Títulos: Usamos &lt;h1&gt; a &lt;h6&gt; para definir títulos e subtítulos. O &lt;h1&gt; é o mais importante e o &lt;h6&gt; o menos</li>
+    </ul>
+    <pre><code class="language-html">
+&lt;h1&gt;Título Principal&lt;/h1&gt;
+&lt;h2&gt;Subtítulo&lt;/h2&gt;
+    </code></pre>
+    <ul>
+        <li>Parágrafos: Para blocos de texto, usamos a tag  &lt;p&gt;</li>
+    </ul>
+    <pre><code class="language-html">
+&lt;p&gt;Este é um parágrafo de exemplo.&lt;/p&gt;
+    </code></pre>
+    <ul>
+        <li>Links: Para criar links clicáveis, usamos a tag &lt;a&gt;.Ela precisa do atributo href para definir o destino.</li>
+    </ul>
+    <pre><code class="language-html">
+&lt;a href="https://www.example.com"&gt;Visite o Exemplo&lt;/a&gt;
+    </code></pre>
+    <ul>
+        <li>Para inserir imagens, usamos a tag &lt;img&gt;. O atributo src define a fonte da imagem e alt é o texto alternativo (caso a imagem não carregue).</li>
+    </ul>
+    <pre><code class="language-html">
+&lt;img src="caminho/para/imagem.jpg" alt="Descrição da imagem"&gt;
+    </code></pre>
+    <br>
+    <h2>Novos elementos no HTML5</h2>
+    <br>
+    <p>O HTML5 trouxe novos elementos semânticos para melhorar a organização e acessibilidade do conteúdo. Esses novos elementos ajudam os navegadores e mecanismos de busca a entender melhor a estrutura do seu site.</p>
+<br>
+    <p>Aqui estão alguns dos principais:</p>
+    <ul>
+        <li>&lt;header&gt;: Representa o cabeçalho de uma página ou seção.</li>
+        <br>
+        <li>&lt;nav&gt;: Define um conjunto de links de navegação.</li>
+        <br>
+        <li>&lt;section&gt;: Define uma seção temática no documento.</li>
+        <br>
+        <li>&lt;article&gt;: Usado para artigos, posts de blogs ou conteúdos independentes.</li>
+        <br>
+        <li>&lt;footer&gt;: Representa o rodapé da página ou de uma seção.</li>
+      </ul>
+      <pre><code class="language-html">
+&lt;header&gt;
+    &lt;h1&gt;Meu Site&lt;/h1&gt;
+&lt;/header&gt;
+&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#inicio"&gt;Início&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#sobre"&gt;Sobre&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#contato"&gt;Contato&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;section&gt;
+    &lt;article&gt;
+        &lt;h2&gt;Título do Artigo&lt;/h2&gt;
+        &lt;p&gt;Este é o conteúdo do artigo.&lt;/p&gt;
+    &lt;/article&gt;
+&lt;/section&gt;
+&lt;footer&gt;
+    &lt;p&gt;Rodapé do site&lt;/p&gt;
+&lt;/footer&gt;
+      </code></pre>
+      <br>
+      <h2>Multimídia</h2>
+      <br>
+      <p>Uma das grandes vantagens do HTML5 é a facilidade com que ele lida com mídia, como áudio e vídeo, sem a necessidade de plugins como o Flash. Vamos ver como incluir esses elementos.</p>
+<br>
+      <h3>Vídeo:</h3>
+
+      <p>Para vídeos, usamos a tag &lt;video&gt;</p>
+      <pre><code class="language-html">
+&lt;video width="320" height="240" controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    Seu navegador não suporta o elemento de vídeo.
+&lt;/video&gt;
+      </code></pre>
+      </div>
+      <h3>Áudio</h3>
+      <p>Para áudio, usamos a tag &lt;audio&gt;</p>
+      <pre><code class="language-html">&lt;audio controls&gt;
+&lt;source src="musica.mp3" type="audio/mpeg"&gt;
+    Seu navegador não suporta o elemento de áudio.
+&lt;/audio&gt;
+</code></pre>
+<br>
+      <h2>Formulários</h2>
+<br>
+      <p>Os formulários são essenciais para a interação com o usuário. Eles permitem que você colete informações, como dados de login ou mensagens em um formulário de contato. Vamos ver um exemplo simples de formulário:</p>
+    <pre> <code class="language-html">
+&lt;form action="/enviar" method="POST"&gt;
+  &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+  &lt;input type="text" id="nome" name="nome" required&gt;
+
+        &lt;label for="email"&gt;Email:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email" required&gt;
+    
+        &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+<p>Aqui está o que cada tag faz:</p>
+<ul>
+    <li>&lt;form&gt;: Define o formulário. O atributo action define para onde os dados do formulário serão enviados e method="POST" define o método de envio.</li>
+    <br>
+    <li>&lt;label&gt;: Um rótulo para o campo de formulário.</li>
+    <br>
+    <li>&lt;input&gt;: Campo de entrada de dados. Os tipos mais comuns são text, email, password, entre outros.</li>
+    <br>
+    <li>&lt;button&gt;: Um botão para enviar o formulário.</li>
+  </ul>
+<br>
+  <h3>Essa é uma visão geral básica do HTML5. Ele é a fundação de qualquer página web, e saber como estruturar corretamente seu conteúdo usando essas tags é essencial para criar sites bem organizados, acessíveis e responsivos.</h3>
+   
+  <div class="hero__bba">
+    <button class="hero__b">
+    <a class="hero__ba" href="CSS.html">Próximo </a>
+  </button>
+  </div>
+  
+
+<hr class="footer__hr">
+  <footer>
+    <p class="footer__autor"> &copy;Carlos Eduardo Martins Saldanha</p>
+    <div class="footer__logos">
+    <a class="footer__link" href="https://www.instagram.com/carlos_bered?igsh=MThwc2Jwa2VrcDBjdQ%3D%3D&utm_source=qr" target="_blank"><img class="logo" src="img/instagram.png" alt="instagram Logo"></a>
+    <a class="footer__link" href="https://br.linkedin.com/in/carlos-eduardo-martins-saldanha-652205323" target="_blank"><img class="logo" src="img/linkedin.png" alt="linkedin logo"></a>
+    <a class="footer__link" href="https://github.com/Carlos-Bered" target="_blank"><img class="logo" src="img/github.png" alt="github logo"></a>
+    </div>
+  </footer>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  </body>
+</html>

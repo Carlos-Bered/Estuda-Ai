@@ -1,0 +1,8 @@
+body {
+    min-width: 100vh;
+    font-family: "Poppins";
+    background-color: #000000;
+    color: white;
+    padding-inline: 1.25rem; /* mexe no padding left e rigth*/
+    padding-block: 0.5rem; /*mexe no padding top e bottom*/
+}

@@ -1,0 +1,72 @@
+.hero {
+   display: flex; /*deixa os itens um do lado do outro*/
+   padding-block: 130px; /*mexe no padding top e bottom*/
+   overflow: hidden;
+   
+}
+
+.hero__left {
+    flex: 1;
+    padding-inline: 100px;
+}
+
+.hero__title {
+    font-size: 3.5rem; /*determina o tamanho do texto*/
+    line-height: 1; /*determina o espaçamento das linhas*/
+    font-weight: 600; /*determina a espessura do texto*/
+    letter-spacing: -0.05em; /*define o espaçamento de letras*/
+}
+
+.hero__b {
+    display: inline-block; /* Permite que o botão tenha largura e altura */
+    background-color: rgb(61, 189, 67);
+    cursor: pointer;
+    border-radius: 15px;
+    border-color: white;;
+    border-width: 5px;
+    width: 450px;
+    height: 100px;    
+}
+
+.hero__ba {
+    align-items: center;
+    text-decoration: none;
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+    width: 100%;
+    height: auto;
+    display:inline-block; /* Permite que o botão tenha largura e altura */
+
+}
+
+.hero__ba:hover {
+    color: black;
+    transition: 1s;
+}
+.hero__right {
+    flex: 1;
+    padding-inline: 100px;
+}
+
+.hero__img {
+    height: 450px;
+    width: 600px;
+    display: block;
+    animation: fly 5s infinite ease-in-out;
+}
+
+
+@keyframes fly {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px); 
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
