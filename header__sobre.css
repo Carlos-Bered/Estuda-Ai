@@ -1,0 +1,48 @@
+.header {
+    display: flex; 
+    justify-content: space-between; 
+    padding-inline: 1.25rem;
+    padding-block: 0.5rem; 
+    align-items: center;
+    margin-top: -25px;
+}
+
+
+
+.logo__icon {
+    display: flex; 
+    align-items: center; 
+    padding-inline: 1.25rem; 
+    padding-block: 0.5rem; 
+}
+
+.header__icon {
+    width: 80px;  
+    height: auto; 
+}
+
+.header__logo {
+    font-size: 2rem; 
+    font-weight: 600; 
+    color: white; 
+    text-decoration: none;
+}
+
+.nav__ul {
+    list-style: none;
+    display: flex; 
+    gap: 2rem; 
+    padding-inline: 1.25rem; 
+    padding-block: 0.5rem; 
+
+.nav__a {
+    color:white;
+    text-decoration: none; 
+    font-size: 20px; 
+
+}
+
+.header__hr {
+    width: auto;
+    margin-top: -15px;
+}

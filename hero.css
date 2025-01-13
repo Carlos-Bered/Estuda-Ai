@@ -1,0 +1,65 @@
+h1 {
+    font-size: 65px;
+    text-align: center;
+    letter-spacing: -1px;
+    margin-bottom: 90px;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+p {
+    font-size: 21px;
+    letter-spacing: -2;
+    
+}
+
+.language-html {
+    height: auto;
+    width: 655px;
+}
+
+ul {
+    font-size: 18px;
+}
+
+.language-html {
+    border-radius: 20px;
+    
+}
+
+.hero__bba {
+    text-align: center;
+    padding-top: 45px;
+}
+.hero__b {
+    background-color: rgb(61, 189, 67);
+    cursor: pointer;
+    border-radius: 15px;
+    border-color: white;;
+    border-width: 5px;
+    width: 450px;
+    height: 100px;   
+
+}
+
+.hero__ba {
+    align-items: center;
+    text-decoration: none;
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: grid   ;
+   
+
+}
+
+.hero__ba:hover {
+    color: black;
+    transition: 1s;
+}
